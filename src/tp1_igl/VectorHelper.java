@@ -55,4 +55,27 @@ public class VectorHelper {
        }
        System.out.println(min + " " + max);
    }
+    
+    protected void Inverser(ArrayList<Integer> Vecteur){
+       
+       for (int i=0;i<Vecteur.size()/2;i++){
+           int temp = Vecteur.get(i);
+           Vecteur.set(i, Vecteur.get(Vecteur.size()-i-1));
+           Vecteur.set(Vecteur.size()-i-1,temp);
+       }
+   }
+
+
+protected ArrayList<Integer> MultiplierParDeux(ArrayList<Integer> Vecteur1) 
+    {
+           int i=0;
+           while(i<Vecteur1.size()){
+           Vecteur1.set(i,Vecteur1.get(i)*2);
+           i++;
+       }
+       return Vecteur1;
+     }
+   
 }
+}
+
